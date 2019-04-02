@@ -1,1 +1,1 @@
-# Global Land Temperature Prediction
+# Global Land Temperature Forecast
