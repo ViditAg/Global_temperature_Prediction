@@ -8,7 +8,9 @@ You can also look at this youtube video I made for the project.
 
 https://www.youtube.com/watch?v=gJ3AFoDxMf4&feature=youtu.be
 
-In this project I perform forecasting of global land temperature for the next 1-month and for next 12-months given history of 1-month and 12-months respectively. I use one deep learning algorithm (Single layer LSTM neural network) and one supervised learning algorithm (Gradient Boosted Regressor). I used two performance metrics to judge the forecast results, namely root mean squared error and mean absolute error. Finally, according to my analysis 1-month forecast is better done by using single layer-LSTM model and 12-month forecast is better done by Gradient Boosted Regressor. But, in both cases the forecast was done to a decent agreement level.
+In this project I perform forecasting of global land temperature for the next 1-month and for next 12-months given history of 1-month and 12-months respectively. I use one deep learning algorithm (Single layer LSTM neural network) and one supervised learning algorithm (Gradient Boosted Regressor). I used two performance metrics to judge the forecast results, namely root mean squared error and mean absolute error. Finally, according to my analysis 1-month forecast is better done by using single layer-LSTM model and 12-month forecast is better done by Gradient Boosted Regressor. Mean absolute error in both cases is 0.468 and 0.419 Celcius, respectively. 
+
+Note: (Results here are scaled back by multiplying (max(Temp)-min(Temp)) to the results shown in the notebook. This correction is done after I realized the final error is shown in for data after Max-Min feature scaling)
 
 Note: I found the feature scaling (Max-Min Scaler) is needed to get the best results.
 https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html 
